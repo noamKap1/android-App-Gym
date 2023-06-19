@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowGroupsTrainer">
+    <ListView
+        android:id="@+id/groups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@color/teal_200"
+        android:layout_marginTop="100dp"
+        android:dividerHeight="1dp"/>
+    <Button
+        android:id="@+id/join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="0dp"
+        android:text="CREATE GROUP"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+    <Button
+        android:id="@+id/goAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="0dp"
+        android:text="Set alarm      "
+        android:layout_below="@+id/join"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/text"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+</RelativeLayout>

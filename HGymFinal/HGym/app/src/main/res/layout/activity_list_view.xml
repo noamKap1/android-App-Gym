@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listViewActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:text="please choose which exercises do you want to see"
+        android:textSize="40dp"
+        android:id="@+id/choose"
+        android:textColor="@color/black"/>
+    <ListView
+        android:id="@+id/lvEducationalMethods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@color/teal_200"
+        android:layout_marginTop="80dp"
+        android:dividerHeight="1dp"
+        android:layout_above="@+id/fragment1btn"
+        android:layout_marginBottom="50dp"/>
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"/>
+    <Button
+        android:id="@+id/fragment1btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="non equipment exercise"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="50dp"/>
+    <Button
+        android:id="@+id/fragment2btn"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/black"
+        android:text="equipment exercise"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="50dp"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/tvLongColor"-->
+<!--        android:text="exercises with equipment"-->
+<!--        android:layout_below="@+id/lvEducationalMethods"-->
+<!--        android:textColor="#D81E1E"-->
+<!--        android:textSize="20dp"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/tvShortColor"-->
+<!--        android:text="exercises without equipment"-->
+<!--        android:layout_below="@+id/tvLongColor"-->
+<!--        android:textColor="#7FE684"-->
+<!--        android:textSize="20dp"-->
+<!--        />-->
+
+
+
+</RelativeLayout>

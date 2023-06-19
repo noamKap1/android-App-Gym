@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/manuDetail"
+        android:text="Back to menu"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/manuDetail"
+        android:id="@+id/openCamera"
+        android:text="camera"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/manuDetail"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/teal_200"
+        android:text="gallery"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/manuDetail"
+        android:layout_toRightOf="@+id/openCamera"
+        android:layout_toLeftOf="@+id/gallery"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="save picture"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/manuDetail"
+        app:cardCornerRadius="100dp"
+        android:layout_marginBottom="60dp">
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_above="@+id/manuDetail"
+            />
+    </androidx.cardview.widget.CardView>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/picture"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="250dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_above="@+id/manuDetail"-->
+<!--        android:layout_marginBottom="79dp" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_below="@+id/month"
+        android:id="@+id/Email"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_below="@+id/month"
+        android:id="@+id/imagePic"
+        android:text=""
+        android:textSize="0dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_below="@+id/roll"
+        android:text=""
+        android:id="@+id/day"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_toRightOf="@+id/day"
+        android:layout_below="@+id/roll"
+        android:text=""
+        android:id="@+id/month"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_toRightOf="@+id/month"
+        android:layout_below="@+id/roll"
+        android:id="@+id/year"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_below="@+id/fName"
+        android:text=""
+        android:id="@+id/roll"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+
+        android:layout_alignParentTop="true"
+        android:id="@+id/fName"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_toRightOf="@+id/fName"
+
+        android:text=""
+        android:id="@+id/lName"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+
+</RelativeLayout>

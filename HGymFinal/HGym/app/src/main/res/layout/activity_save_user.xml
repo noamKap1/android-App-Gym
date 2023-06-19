@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".SaveUser"
+    >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/txtTitle"
+    android:text="Please fill your details"
+    android:textSize="34dp"
+    android:layout_gravity="center"
+    android:textColor="@android:color/holo_orange_light"
+    />
+
+<EditText
+    android:id="@+id/firstName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtTitle"
+    android:layout_centerInParent="true"
+    android:hint="name"
+    android:textColorHint="@color/teal_200" />
+
+<EditText
+    android:id="@+id/LastName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/firstName"
+    android:layout_centerInParent="true"
+    android:hint="Last Name"
+    android:textColorHint="@color/teal_200" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_below="@+id/LastName"
+    android:textColorHint="@color/teal_200"
+    android:hint="roll"
+    android:id="@+id/Roll"
+    />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_below="@+id/Roll"
+    android:textColorHint="@color/teal_200"
+    android:hint="email"
+    android:id="@+id/Email"
+    />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_below="@+id/Email"
+    android:hint="password"
+    android:inputType="textPassword"
+    android:textColorHint="@color/teal_200"
+    android:id="@+id/Password"
+    />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_below="@+id/Password"
+    android:hint="day of birth"
+    android:textColorHint="@color/teal_200"
+    android:id="@+id/DayOfBirth"
+    />
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_below="@+id/DayOfBirth"
+    android:hint="month of birth"
+    android:textColorHint="@color/teal_200"
+    android:id="@+id/MonthOfBirth"
+    />
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_below="@+id/MonthOfBirth"
+    android:hint="year of birth"
+    android:textColorHint="@color/teal_200"
+    android:id="@+id/YearOfBirth"
+    />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_below="@+id/YearOfBirth"
+    android:backgroundTint="@color/teal_200"
+    android:text="save"
+    android:id="@+id/btnSave"
+    android:textSize="20dp"
+    />
+
+
+
+
+
+
+</RelativeLayout>

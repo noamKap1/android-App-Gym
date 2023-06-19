@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Player">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pathName"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_below="@+id/pathName"
+        android:id="@+id/duration"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_above="@+id/pathName"
+        android:id="@+id/time"
+        android:text="Date of recroding: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/ret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:text="return"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/duration"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:text="play"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_showExercises"
+        android:title="show exercises"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_backToMenu"
+        android:title="back to menu"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_createNonEqExercises"
+        android:title="create non equipment exercise" />
+    <item
+        android:id="@+id/menu_createEqExercises"
+        android:title="create equipment exercise" />
+    <item
+        android:id="@+id/menu_profile"
+        android:title="profile" />
+    <item
+        android:id="@+id/menu_logOut"
+        android:title="log out" />
+
+
+</menu>

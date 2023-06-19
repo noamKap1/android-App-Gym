@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".createNonEquipmentExercises"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtTitle"
+        android:text="Please fill the exercise details"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_orange_light"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_centerInParent="true"
+        android:hint="name"
+        android:textColorHint="@color/teal_200" />
+
+    <EditText
+        android:id="@+id/muscleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerInParent="true"
+        android:hint="muscle group"
+        android:textColorHint="@color/teal_200" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/muscleGroup"
+        android:textColorHint="@color/teal_200"
+        android:hint="level of difficulty"
+        android:id="@+id/level"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/level"
+        android:textColorHint="@color/teal_200"
+        android:hint="explanation"
+        android:id="@+id/exp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/exp"
+        android:hint="duration of the exercise"
+        android:textColorHint="@color/teal_200"
+        android:id="@+id/duration"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/weight"
+        android:backgroundTint="@color/teal_200"
+        android:text="save"
+        android:id="@+id/btnSave"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btnSave"
+        android:backgroundTint="@color/teal_200"
+        android:id="@+id/btnDelete"
+        android:text="delete"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btnDelete"
+        android:backgroundTint="@color/teal_200"
+        android:id="@+id/btnUpdate"
+        android:text="update"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btnUpdate"
+        android:backgroundTint="@color/teal_200"
+        android:text="return"
+        android:id="@+id/btnReturn"
+        android:textSize="20dp"
+        />
+
+
+
+
+</RelativeLayout>
